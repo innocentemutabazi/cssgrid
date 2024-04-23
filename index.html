@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style type="text/css">
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: verdana;
+
+        color: #ffffff;
+        font-size: 1rem;
+        text-align: center;
+      }
+
+      .main-container {
+        width: 960px;
+        margin: 0 auto;
+      
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        grid-gap: 10px;
+      }
+
+      .main-container > * {
+        background-color: #b5b5b5;
+        padding: 20px;
+      }
+
+      .header-section {
+        background-color: #5b5b5b;
+        grid-column: 1/13;
+      }
+
+      .main-section {
+       grid-column: 5/13;
+       grid-row: 2/4;
+      }
+      
+      .aside-section {
+        grid-column: 1/5;
+      }
+
+      .nav-section {
+        grid-column: 1/5;
+      }
+
+      .section {
+        grid-column: 1/13;
+        grid-row: 4/6;
+      }
+
+      .footer-section {
+        background-color: #5b5b5b;
+        grid-column: 1/13;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="main-container">
+      <header class="header-section"><h1>Header Section</h1></header>
+      <main class="main-section">Main Section</main>
+      <aside class="aside-section">Aside Section</aside>
+      <nav class="nav-section">Nav Section</nav>
+      <section class="section">Section Section</section>
+      <footer class="footer-section"><small>Footer Section</small></footer>
+    </div>
+    
+  </body>
+  
+</html>
